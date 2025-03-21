@@ -12,9 +12,6 @@ RUN pip install --upgrade pip selenium undetected-chromedriver
 # Copy FlareSolverr source code
 COPY . /app
 
-# Move FlareSolverr files to root only if /app/src/ exists
-RUN if [ -d "/app/src" ]; then mv /app/src/* /app/; fi
-
 # Set working directory
 WORKDIR /app
 
