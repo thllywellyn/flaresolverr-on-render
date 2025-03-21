@@ -15,5 +15,5 @@ COPY . /app
 # Set working directory
 WORKDIR /app
 
-# Command to run FlareSolverr
-CMD ["python", "src/flaresolverr.py"]
+# Ensure correct path to FlareSolverr entry file
+CMD ["python", "./src/flaresolverr.py"]
