@@ -1,0 +1,10 @@
+services:
+  - name: flaresolverr
+    type: web
+    env: docker
+    repo: https://github.com/your-username/your-repo
+    region: oregon
+    plan: starter
+    envVars:
+      - key: PORT
+        value: 8191
