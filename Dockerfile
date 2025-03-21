@@ -3,7 +3,7 @@ FROM python:3.11-slim
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     xvfb \
-    chromium-browser \
+    chromium \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Selenium and undetected-chromedriver
